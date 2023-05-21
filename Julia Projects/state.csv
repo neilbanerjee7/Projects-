@@ -1,0 +1,1137 @@
+# file created by code in factory_simulation_2.jl
+# file created on 2022-11-25 at 12:37:35
+# parameter: seed = 1
+# parameter: T = 10000.0
+# parameter: mean_interarrival = 60.0
+# parameter: mean_machine_times = [25.0, 59.0]
+# parameter: max_queue = [9223372036854775807, 4]
+# parameter: time_units = minutes
+time,event_id,event_type,timing,length_event_list,length_queue1,length_queue2,in_service1,in_service2
+       0.000,     0,  Arrival,before,   0,   0,   0,   0,   0
+       0.000,     0,  Arrival, after,   2,   0,   0,   1,   0
+      25.000,     3,Finish(1),before,   1,   0,   0,   1,   0
+      25.000,     3,Finish(1), after,   2,   0,   0,   0,   1
+      36.008,     5,Finish(2),before,   1,   0,   0,   0,   1
+      36.008,     5,Finish(2), after,   1,   0,   0,   0,   0
+      40.499,     2,  Arrival,before,   0,   0,   0,   0,   0
+      40.499,     2,  Arrival, after,   2,   0,   0,   1,   0
+      65.499,     8,Finish(1),before,   1,   0,   0,   1,   0
+      65.499,     8,Finish(1), after,   2,   0,   0,   0,   1
+     106.041,     7,  Arrival,before,   1,   0,   0,   0,   1
+     106.041,     7,  Arrival, after,   3,   0,   0,   1,   1
+     130.155,    10,Finish(2),before,   2,   0,   0,   1,   1
+     130.155,    10,Finish(2), after,   2,   0,   0,   1,   0
+     131.041,    12,Finish(1),before,   1,   0,   0,   1,   0
+     131.041,    12,Finish(1), after,   2,   0,   0,   0,   1
+     156.715,    15,Finish(2),before,   1,   0,   0,   0,   1
+     156.715,    15,Finish(2), after,   1,   0,   0,   0,   0
+     299.570,    11,  Arrival,before,   0,   0,   0,   0,   0
+     299.570,    11,  Arrival, after,   2,   0,   0,   1,   0
+     324.570,    18,Finish(1),before,   1,   0,   0,   1,   0
+     324.570,    18,Finish(1), after,   2,   0,   0,   0,   1
+     394.069,    20,Finish(2),before,   1,   0,   0,   0,   1
+     394.069,    20,Finish(2), after,   1,   0,   0,   0,   0
+     468.813,    17,  Arrival,before,   0,   0,   0,   0,   0
+     468.813,    17,  Arrival, after,   2,   0,   0,   1,   0
+     470.325,    22,  Arrival,before,   1,   0,   0,   1,   0
+     470.325,    22,  Arrival, after,   2,   1,   0,   1,   0
+     491.645,    24,  Arrival,before,   1,   1,   0,   1,   0
+     491.645,    24,  Arrival, after,   2,   2,   0,   1,   0
+     493.813,    23,Finish(1),before,   1,   2,   0,   1,   0
+     493.813,    23,Finish(1), after,   3,   1,   0,   1,   1
+     514.248,    28,Finish(2),before,   2,   1,   0,   1,   1
+     514.248,    28,Finish(2), after,   2,   1,   0,   1,   0
+     514.364,    25,  Arrival,before,   1,   1,   0,   1,   0
+     514.364,    25,  Arrival, after,   2,   2,   0,   1,   0
+     518.813,    27,Finish(1),before,   1,   2,   0,   1,   0
+     518.813,    27,Finish(1), after,   3,   1,   0,   1,   1
+     540.261,    33,Finish(2),before,   2,   1,   0,   1,   1
+     540.261,    33,Finish(2), after,   2,   1,   0,   1,   0
+     543.813,    32,Finish(1),before,   1,   1,   0,   1,   0
+     543.813,    32,Finish(1), after,   3,   0,   0,   1,   1
+     544.726,    37,Finish(2),before,   2,   0,   0,   1,   1
+     544.726,    37,Finish(2), after,   2,   0,   0,   1,   0
+     568.813,    36,Finish(1),before,   1,   0,   0,   1,   0
+     568.813,    36,Finish(1), after,   2,   0,   0,   0,   1
+     624.111,    40,Finish(2),before,   1,   0,   0,   0,   1
+     624.111,    40,Finish(2), after,   1,   0,   0,   0,   0
+     642.682,    30,  Arrival,before,   0,   0,   0,   0,   0
+     642.682,    30,  Arrival, after,   2,   0,   0,   1,   0
+     667.682,    43,Finish(1),before,   1,   0,   0,   1,   0
+     667.682,    43,Finish(1), after,   2,   0,   0,   0,   1
+     684.219,    42,  Arrival,before,   1,   0,   0,   0,   1
+     684.219,    42,  Arrival, after,   3,   0,   0,   1,   1
+     704.228,    46,  Arrival,before,   2,   0,   0,   1,   1
+     704.228,    46,  Arrival, after,   3,   1,   0,   1,   1
+     709.219,    47,Finish(1),before,   2,   1,   0,   1,   1
+     709.219,    47,Finish(1), after,   3,   0,   1,   1,   1
+     723.877,    45,Finish(2),before,   2,   0,   1,   1,   1
+     723.877,    45,Finish(2), after,   3,   0,   0,   1,   1
+     733.245,    48,  Arrival,before,   2,   0,   0,   1,   1
+     733.245,    48,  Arrival, after,   3,   1,   0,   1,   1
+     734.219,    50,Finish(1),before,   2,   1,   0,   1,   1
+     734.219,    50,Finish(1), after,   3,   0,   1,   1,   1
+     759.219,    55,Finish(1),before,   2,   0,   1,   1,   1
+     759.219,    55,Finish(1), after,   2,   0,   2,   0,   1
+     761.004,    52,Finish(2),before,   1,   0,   2,   0,   1
+     761.004,    52,Finish(2), after,   2,   0,   1,   0,   1
+     810.645,    58,Finish(2),before,   1,   0,   1,   0,   1
+     810.645,    58,Finish(2), after,   2,   0,   0,   0,   1
+     815.566,    53,  Arrival,before,   1,   0,   0,   0,   1
+     815.566,    53,  Arrival, after,   3,   0,   0,   1,   1
+     836.523,    60,Finish(2),before,   2,   0,   0,   1,   1
+     836.523,    60,Finish(2), after,   2,   0,   0,   1,   0
+     840.566,    62,Finish(1),before,   1,   0,   0,   1,   0
+     840.566,    62,Finish(1), after,   2,   0,   0,   0,   1
+     866.347,    61,  Arrival,before,   1,   0,   0,   0,   1
+     866.347,    61,  Arrival, after,   3,   0,   0,   1,   1
+     871.213,    65,Finish(2),before,   2,   0,   0,   1,   1
+     871.213,    65,Finish(2), after,   2,   0,   0,   1,   0
+     891.347,    67,Finish(1),before,   1,   0,   0,   1,   0
+     891.347,    67,Finish(1), after,   2,   0,   0,   0,   1
+     902.501,    70,Finish(2),before,   1,   0,   0,   0,   1
+     902.501,    70,Finish(2), after,   1,   0,   0,   0,   0
+     959.691,    66,  Arrival,before,   0,   0,   0,   0,   0
+     959.691,    66,  Arrival, after,   2,   0,   0,   1,   0
+     984.691,    73,Finish(1),before,   1,   0,   0,   1,   0
+     984.691,    73,Finish(1), after,   2,   0,   0,   0,   1
+     988.805,    72,  Arrival,before,   1,   0,   0,   0,   1
+     988.805,    72,  Arrival, after,   3,   0,   0,   1,   1
+    1010.328,    76,  Arrival,before,   2,   0,   0,   1,   1
+    1010.328,    76,  Arrival, after,   3,   1,   0,   1,   1
+    1013.805,    77,Finish(1),before,   2,   1,   0,   1,   1
+    1013.805,    77,Finish(1), after,   3,   0,   1,   1,   1
+    1035.238,    75,Finish(2),before,   2,   0,   1,   1,   1
+    1035.238,    75,Finish(2), after,   3,   0,   0,   1,   1
+    1038.805,    80,Finish(1),before,   2,   0,   0,   1,   1
+    1038.805,    80,Finish(1), after,   2,   0,   1,   0,   1
+    1046.872,    78,  Arrival,before,   1,   0,   1,   0,   1
+    1046.872,    78,  Arrival, after,   3,   0,   1,   1,   1
+    1051.724,    84,  Arrival,before,   2,   0,   1,   1,   1
+    1051.724,    84,  Arrival, after,   3,   1,   1,   1,   1
+    1062.056,    82,Finish(2),before,   2,   1,   1,   1,   1
+    1062.056,    82,Finish(2), after,   3,   1,   0,   1,   1
+    1071.872,    85,Finish(1),before,   2,   1,   0,   1,   1
+    1071.872,    85,Finish(1), after,   3,   0,   1,   1,   1
+    1096.872,    90,Finish(1),before,   2,   0,   1,   1,   1
+    1096.872,    90,Finish(1), after,   2,   0,   2,   0,   1
+    1142.242,    88,Finish(2),before,   1,   0,   2,   0,   1
+    1142.242,    88,Finish(2), after,   2,   0,   1,   0,   1
+    1152.884,    93,Finish(2),before,   1,   0,   1,   0,   1
+    1152.884,    93,Finish(2), after,   2,   0,   0,   0,   1
+    1171.128,    86,  Arrival,before,   1,   0,   0,   0,   1
+    1171.128,    86,  Arrival, after,   3,   0,   0,   1,   1
+    1196.128,    97,Finish(1),before,   2,   0,   0,   1,   1
+    1196.128,    97,Finish(1), after,   2,   0,   1,   0,   1
+    1201.181,    95,Finish(2),before,   1,   0,   1,   0,   1
+    1201.181,    95,Finish(2), after,   2,   0,   0,   0,   1
+    1206.433,   100,Finish(2),before,   1,   0,   0,   0,   1
+    1206.433,   100,Finish(2), after,   1,   0,   0,   0,   0
+    1284.076,    96,  Arrival,before,   0,   0,   0,   0,   0
+    1284.076,    96,  Arrival, after,   2,   0,   0,   1,   0
+    1284.130,   102,  Arrival,before,   1,   0,   0,   1,   0
+    1284.130,   102,  Arrival, after,   2,   1,   0,   1,   0
+    1309.076,   103,Finish(1),before,   1,   1,   0,   1,   0
+    1309.076,   103,Finish(1), after,   3,   0,   0,   1,   1
+    1334.076,   106,Finish(1),before,   2,   0,   0,   1,   1
+    1334.076,   106,Finish(1), after,   2,   0,   1,   0,   1
+    1335.846,   104,  Arrival,before,   1,   0,   1,   0,   1
+    1335.846,   104,  Arrival, after,   3,   0,   1,   1,   1
+    1344.186,   109,  Arrival,before,   2,   0,   1,   1,   1
+    1344.186,   109,  Arrival, after,   3,   1,   1,   1,   1
+    1355.694,   107,Finish(2),before,   2,   1,   1,   1,   1
+    1355.694,   107,Finish(2), after,   3,   1,   0,   1,   1
+    1360.846,   110,Finish(1),before,   2,   1,   0,   1,   1
+    1360.846,   110,Finish(1), after,   3,   0,   1,   1,   1
+    1362.540,   113,Finish(2),before,   2,   0,   1,   1,   1
+    1362.540,   113,Finish(2), after,   3,   0,   0,   1,   1
+    1366.019,   111,  Arrival,before,   2,   0,   0,   1,   1
+    1366.019,   111,  Arrival, after,   3,   1,   0,   1,   1
+    1384.387,   117,Finish(2),before,   2,   1,   0,   1,   1
+    1384.387,   117,Finish(2), after,   2,   1,   0,   1,   0
+    1385.846,   115,Finish(1),before,   1,   1,   0,   1,   0
+    1385.846,   115,Finish(1), after,   3,   0,   0,   1,   1
+    1410.846,   121,Finish(1),before,   2,   0,   0,   1,   1
+    1410.846,   121,Finish(1), after,   2,   0,   1,   0,   1
+    1451.138,   118,  Arrival,before,   1,   0,   1,   0,   1
+    1451.138,   118,  Arrival, after,   3,   0,   1,   1,   1
+    1453.081,   124,  Arrival,before,   2,   0,   1,   1,   1
+    1453.081,   124,  Arrival, after,   3,   1,   1,   1,   1
+    1467.371,   126,  Arrival,before,   2,   1,   1,   1,   1
+    1467.371,   126,  Arrival, after,   3,   2,   1,   1,   1
+    1476.138,   125,Finish(1),before,   2,   2,   1,   1,   1
+    1476.138,   125,Finish(1), after,   3,   1,   2,   1,   1
+    1484.512,   127,  Arrival,before,   2,   1,   2,   1,   1
+    1484.512,   127,  Arrival, after,   3,   2,   2,   1,   1
+    1499.844,   130,  Arrival,before,   2,   2,   2,   1,   1
+    1499.844,   130,  Arrival, after,   3,   3,   2,   1,   1
+    1501.138,   129,Finish(1),before,   2,   3,   2,   1,   1
+    1501.138,   129,Finish(1), after,   3,   2,   3,   1,   1
+    1526.138,   133,Finish(1),before,   2,   2,   3,   1,   1
+    1526.138,   133,Finish(1), after,   3,   1,   4,   1,   1
+    1547.576,   131,  Arrival,before,   2,   1,   4,   1,   1
+    1547.576,   131,  Arrival, after,   3,   2,   4,   1,   1
+    1551.138,   135,Finish(1),before,   2,   2,   4,   1,   1
+    1551.138,   135,Finish(1), after,   3,   2,   4,   1,   1
+    1571.196,   136,  Arrival,before,   2,   2,   4,   1,   1
+    1571.196,   136,  Arrival, after,   3,   3,   4,   1,   1
+    1571.196,   135,Finish(1),before,   2,   3,   4,   1,   1
+    1571.196,   135,Finish(1), after,   3,   3,   4,   1,   1
+    1593.032,   122,Finish(2),before,   2,   3,   4,   1,   1
+    1593.032,   122,Finish(2), after,   3,   3,   3,   1,   1
+    1593.032,   135,Finish(1),before,   2,   3,   3,   1,   1
+    1593.032,   135,Finish(1), after,   3,   2,   4,   1,   1
+    1618.032,   143,Finish(1),before,   2,   2,   4,   1,   1
+    1618.032,   143,Finish(1), after,   3,   2,   4,   1,   1
+    1622.393,   141,Finish(2),before,   2,   2,   4,   1,   1
+    1622.393,   141,Finish(2), after,   3,   2,   3,   1,   1
+    1622.393,   143,Finish(1),before,   2,   2,   3,   1,   1
+    1622.393,   143,Finish(1), after,   3,   1,   4,   1,   1
+    1623.259,   138,  Arrival,before,   2,   1,   4,   1,   1
+    1623.259,   138,  Arrival, after,   3,   2,   4,   1,   1
+    1647.393,   148,Finish(1),before,   2,   2,   4,   1,   1
+    1647.393,   148,Finish(1), after,   3,   2,   4,   1,   1
+    1659.086,   146,Finish(2),before,   2,   2,   4,   1,   1
+    1659.086,   146,Finish(2), after,   3,   2,   3,   1,   1
+    1659.086,   148,Finish(1),before,   2,   2,   3,   1,   1
+    1659.086,   148,Finish(1), after,   3,   1,   4,   1,   1
+    1664.196,   152,Finish(2),before,   2,   1,   4,   1,   1
+    1664.196,   152,Finish(2), after,   3,   1,   3,   1,   1
+    1665.648,   149,  Arrival,before,   2,   1,   3,   1,   1
+    1665.648,   149,  Arrival, after,   3,   2,   3,   1,   1
+    1684.086,   154,Finish(1),before,   2,   2,   3,   1,   1
+    1684.086,   154,Finish(1), after,   3,   1,   4,   1,   1
+    1692.483,   156,Finish(2),before,   2,   1,   4,   1,   1
+    1692.483,   156,Finish(2), after,   3,   1,   3,   1,   1
+    1709.086,   159,Finish(1),before,   2,   1,   3,   1,   1
+    1709.086,   159,Finish(1), after,   3,   0,   4,   1,   1
+    1731.664,   157,  Arrival,before,   2,   0,   4,   1,   1
+    1731.664,   157,  Arrival, after,   3,   1,   4,   1,   1
+    1734.086,   163,Finish(1),before,   2,   1,   4,   1,   1
+    1734.086,   163,Finish(1), after,   3,   1,   4,   1,   1
+    1748.842,   164,  Arrival,before,   2,   1,   4,   1,   1
+    1748.842,   164,  Arrival, after,   3,   2,   4,   1,   1
+    1748.842,   163,Finish(1),before,   2,   2,   4,   1,   1
+    1748.842,   163,Finish(1), after,   3,   2,   4,   1,   1
+    1754.328,   166,  Arrival,before,   2,   2,   4,   1,   1
+    1754.328,   166,  Arrival, after,   3,   3,   4,   1,   1
+    1754.328,   163,Finish(1),before,   2,   3,   4,   1,   1
+    1754.328,   163,Finish(1), after,   3,   3,   4,   1,   1
+    1932.316,   168,  Arrival,before,   2,   3,   4,   1,   1
+    1932.316,   168,  Arrival, after,   3,   4,   4,   1,   1
+    1932.316,   163,Finish(1),before,   2,   4,   4,   1,   1
+    1932.316,   163,Finish(1), after,   3,   4,   4,   1,   1
+    1939.222,   161,Finish(2),before,   2,   4,   4,   1,   1
+    1939.222,   161,Finish(2), after,   3,   4,   3,   1,   1
+    1939.222,   163,Finish(1),before,   2,   4,   3,   1,   1
+    1939.222,   163,Finish(1), after,   3,   3,   4,   1,   1
+    1964.222,   175,Finish(1),before,   2,   3,   4,   1,   1
+    1964.222,   175,Finish(1), after,   3,   3,   4,   1,   1
+    2123.391,   170,  Arrival,before,   2,   3,   4,   1,   1
+    2123.391,   170,  Arrival, after,   3,   4,   4,   1,   1
+    2123.391,   175,Finish(1),before,   2,   4,   4,   1,   1
+    2123.391,   175,Finish(1), after,   3,   4,   4,   1,   1
+    2134.131,   173,Finish(2),before,   2,   4,   4,   1,   1
+    2134.131,   173,Finish(2), after,   3,   4,   3,   1,   1
+    2134.131,   175,Finish(1),before,   2,   4,   3,   1,   1
+    2134.131,   175,Finish(1), after,   3,   3,   4,   1,   1
+    2159.131,   182,Finish(1),before,   2,   3,   4,   1,   1
+    2159.131,   182,Finish(1), after,   3,   3,   4,   1,   1
+    2170.428,   177,  Arrival,before,   2,   3,   4,   1,   1
+    2170.428,   177,  Arrival, after,   3,   4,   4,   1,   1
+    2170.428,   182,Finish(1),before,   2,   4,   4,   1,   1
+    2170.428,   182,Finish(1), after,   3,   4,   4,   1,   1
+    2187.833,   180,Finish(2),before,   2,   4,   4,   1,   1
+    2187.833,   180,Finish(2), after,   3,   4,   3,   1,   1
+    2187.833,   182,Finish(1),before,   2,   4,   3,   1,   1
+    2187.833,   182,Finish(1), after,   3,   3,   4,   1,   1
+    2212.833,   189,Finish(1),before,   2,   3,   4,   1,   1
+    2212.833,   189,Finish(1), after,   3,   3,   4,   1,   1
+    2234.526,   187,Finish(2),before,   2,   3,   4,   1,   1
+    2234.526,   187,Finish(2), after,   3,   3,   3,   1,   1
+    2234.526,   189,Finish(1),before,   2,   3,   3,   1,   1
+    2234.526,   189,Finish(1), after,   3,   2,   4,   1,   1
+    2259.526,   194,Finish(1),before,   2,   2,   4,   1,   1
+    2259.526,   194,Finish(1), after,   3,   2,   4,   1,   1
+    2267.871,   184,  Arrival,before,   2,   2,   4,   1,   1
+    2267.871,   184,  Arrival, after,   3,   3,   4,   1,   1
+    2267.871,   194,Finish(1),before,   2,   3,   4,   1,   1
+    2267.871,   194,Finish(1), after,   3,   3,   4,   1,   1
+    2270.071,   192,Finish(2),before,   2,   3,   4,   1,   1
+    2270.071,   192,Finish(2), after,   3,   3,   3,   1,   1
+    2270.071,   194,Finish(1),before,   2,   3,   3,   1,   1
+    2270.071,   194,Finish(1), after,   3,   2,   4,   1,   1
+    2295.071,   201,Finish(1),before,   2,   2,   4,   1,   1
+    2295.071,   201,Finish(1), after,   3,   2,   4,   1,   1
+    2298.904,   196,  Arrival,before,   2,   2,   4,   1,   1
+    2298.904,   196,  Arrival, after,   3,   3,   4,   1,   1
+    2298.904,   201,Finish(1),before,   2,   3,   4,   1,   1
+    2298.904,   201,Finish(1), after,   3,   3,   4,   1,   1
+    2300.018,   203,  Arrival,before,   2,   3,   4,   1,   1
+    2300.018,   203,  Arrival, after,   3,   4,   4,   1,   1
+    2300.018,   201,Finish(1),before,   2,   4,   4,   1,   1
+    2300.018,   201,Finish(1), after,   3,   4,   4,   1,   1
+    2388.810,   199,Finish(2),before,   2,   4,   4,   1,   1
+    2388.810,   199,Finish(2), after,   3,   4,   3,   1,   1
+    2388.810,   201,Finish(1),before,   2,   4,   3,   1,   1
+    2388.810,   201,Finish(1), after,   3,   3,   4,   1,   1
+    2413.810,   210,Finish(1),before,   2,   3,   4,   1,   1
+    2413.810,   210,Finish(1), after,   3,   3,   4,   1,   1
+    2422.681,   208,Finish(2),before,   2,   3,   4,   1,   1
+    2422.681,   208,Finish(2), after,   3,   3,   3,   1,   1
+    2422.681,   210,Finish(1),before,   2,   3,   3,   1,   1
+    2422.681,   210,Finish(1), after,   3,   2,   4,   1,   1
+    2447.681,   215,Finish(1),before,   2,   2,   4,   1,   1
+    2447.681,   215,Finish(1), after,   3,   2,   4,   1,   1
+    2495.180,   213,Finish(2),before,   2,   2,   4,   1,   1
+    2495.180,   213,Finish(2), after,   3,   2,   3,   1,   1
+    2495.180,   215,Finish(1),before,   2,   2,   3,   1,   1
+    2495.180,   215,Finish(1), after,   3,   1,   4,   1,   1
+    2499.798,   218,Finish(2),before,   2,   1,   4,   1,   1
+    2499.798,   218,Finish(2), after,   3,   1,   3,   1,   1
+    2505.768,   222,Finish(2),before,   2,   1,   3,   1,   1
+    2505.768,   222,Finish(2), after,   3,   1,   2,   1,   1
+    2520.180,   220,Finish(1),before,   2,   1,   2,   1,   1
+    2520.180,   220,Finish(1), after,   3,   0,   3,   1,   1
+    2545.180,   226,Finish(1),before,   2,   0,   3,   1,   1
+    2545.180,   226,Finish(1), after,   2,   0,   4,   0,   1
+    2559.173,   224,Finish(2),before,   1,   0,   4,   0,   1
+    2559.173,   224,Finish(2), after,   2,   0,   3,   0,   1
+    2589.612,   205,  Arrival,before,   1,   0,   3,   0,   1
+    2589.612,   205,  Arrival, after,   3,   0,   3,   1,   1
+    2607.413,   229,Finish(2),before,   2,   0,   3,   1,   1
+    2607.413,   229,Finish(2), after,   3,   0,   2,   1,   1
+    2614.612,   231,Finish(1),before,   2,   0,   2,   1,   1
+    2614.612,   231,Finish(1), after,   2,   0,   3,   0,   1
+    2634.209,   233,Finish(2),before,   1,   0,   3,   0,   1
+    2634.209,   233,Finish(2), after,   2,   0,   2,   0,   1
+    2637.065,   230,  Arrival,before,   1,   0,   2,   0,   1
+    2637.065,   230,  Arrival, after,   3,   0,   2,   1,   1
+    2662.065,   238,Finish(1),before,   2,   0,   2,   1,   1
+    2662.065,   238,Finish(1), after,   2,   0,   3,   0,   1
+    2690.769,   236,Finish(2),before,   1,   0,   3,   0,   1
+    2690.769,   236,Finish(2), after,   2,   0,   2,   0,   1
+    2730.832,   241,Finish(2),before,   1,   0,   2,   0,   1
+    2730.832,   241,Finish(2), after,   2,   0,   1,   0,   1
+    2739.786,   243,Finish(2),before,   1,   0,   1,   0,   1
+    2739.786,   243,Finish(2), after,   2,   0,   0,   0,   1
+    2749.489,   237,  Arrival,before,   1,   0,   0,   0,   1
+    2749.489,   237,  Arrival, after,   3,   0,   0,   1,   1
+    2767.975,   246,  Arrival,before,   2,   0,   0,   1,   1
+    2767.975,   246,  Arrival, after,   3,   1,   0,   1,   1
+    2774.489,   247,Finish(1),before,   2,   1,   0,   1,   1
+    2774.489,   247,Finish(1), after,   3,   0,   1,   1,   1
+    2799.489,   250,Finish(1),before,   2,   0,   1,   1,   1
+    2799.489,   250,Finish(1), after,   2,   0,   2,   0,   1
+    2841.633,   248,  Arrival,before,   1,   0,   2,   0,   1
+    2841.633,   248,  Arrival, after,   3,   0,   2,   1,   1
+    2859.621,   245,Finish(2),before,   2,   0,   2,   1,   1
+    2859.621,   245,Finish(2), after,   3,   0,   1,   1,   1
+    2866.633,   253,Finish(1),before,   2,   0,   1,   1,   1
+    2866.633,   253,Finish(1), after,   2,   0,   2,   0,   1
+    2887.534,   255,Finish(2),before,   1,   0,   2,   0,   1
+    2887.534,   255,Finish(2), after,   2,   0,   1,   0,   1
+    2997.429,   252,  Arrival,before,   1,   0,   1,   0,   1
+    2997.429,   252,  Arrival, after,   3,   0,   1,   1,   1
+    3022.429,   260,Finish(1),before,   2,   0,   1,   1,   1
+    3022.429,   260,Finish(1), after,   2,   0,   2,   0,   1
+    3041.652,   258,Finish(2),before,   1,   0,   2,   0,   1
+    3041.652,   258,Finish(2), after,   2,   0,   1,   0,   1
+    3083.218,   259,  Arrival,before,   1,   0,   1,   0,   1
+    3083.218,   259,  Arrival, after,   3,   0,   1,   1,   1
+    3108.218,   265,Finish(1),before,   2,   0,   1,   1,   1
+    3108.218,   265,Finish(1), after,   2,   0,   2,   0,   1
+    3139.149,   263,Finish(2),before,   1,   0,   2,   0,   1
+    3139.149,   263,Finish(2), after,   2,   0,   1,   0,   1
+    3168.296,   264,  Arrival,before,   1,   0,   1,   0,   1
+    3168.296,   264,  Arrival, after,   3,   0,   1,   1,   1
+    3193.296,   270,Finish(1),before,   2,   0,   1,   1,   1
+    3193.296,   270,Finish(1), after,   2,   0,   2,   0,   1
+    3200.739,   268,Finish(2),before,   1,   0,   2,   0,   1
+    3200.739,   268,Finish(2), after,   2,   0,   1,   0,   1
+    3248.041,   269,  Arrival,before,   1,   0,   1,   0,   1
+    3248.041,   269,  Arrival, after,   3,   0,   1,   1,   1
+    3250.573,   274,  Arrival,before,   2,   0,   1,   1,   1
+    3250.573,   274,  Arrival, after,   3,   1,   1,   1,   1
+    3273.041,   275,Finish(1),before,   2,   1,   1,   1,   1
+    3273.041,   275,Finish(1), after,   3,   0,   2,   1,   1
+    3298.041,   278,Finish(1),before,   2,   0,   2,   1,   1
+    3298.041,   278,Finish(1), after,   2,   0,   3,   0,   1
+    3299.127,   276,  Arrival,before,   1,   0,   3,   0,   1
+    3299.127,   276,  Arrival, after,   3,   0,   3,   1,   1
+    3324.127,   281,Finish(1),before,   2,   0,   3,   1,   1
+    3324.127,   281,Finish(1), after,   2,   0,   4,   0,   1
+    3329.896,   280,  Arrival,before,   1,   0,   4,   0,   1
+    3329.896,   280,  Arrival, after,   3,   0,   4,   1,   1
+    3335.592,   273,Finish(2),before,   2,   0,   4,   1,   1
+    3335.592,   273,Finish(2), after,   3,   0,   3,   1,   1
+    3354.896,   284,Finish(1),before,   2,   0,   3,   1,   1
+    3354.896,   284,Finish(1), after,   2,   0,   4,   0,   1
+    3356.411,   283,  Arrival,before,   1,   0,   4,   0,   1
+    3356.411,   283,  Arrival, after,   3,   0,   4,   1,   1
+    3367.677,   288,  Arrival,before,   2,   0,   4,   1,   1
+    3367.677,   288,  Arrival, after,   3,   1,   4,   1,   1
+    3379.965,   290,  Arrival,before,   2,   1,   4,   1,   1
+    3379.965,   290,  Arrival, after,   3,   2,   4,   1,   1
+    3381.411,   289,Finish(1),before,   2,   2,   4,   1,   1
+    3381.411,   289,Finish(1), after,   3,   2,   4,   1,   1
+    3404.073,   291,  Arrival,before,   2,   2,   4,   1,   1
+    3404.073,   291,  Arrival, after,   3,   3,   4,   1,   1
+    3404.073,   289,Finish(1),before,   2,   3,   4,   1,   1
+    3404.073,   289,Finish(1), after,   3,   3,   4,   1,   1
+    3405.441,   293,  Arrival,before,   2,   3,   4,   1,   1
+    3405.441,   293,  Arrival, after,   3,   4,   4,   1,   1
+    3405.441,   289,Finish(1),before,   2,   4,   4,   1,   1
+    3405.441,   289,Finish(1), after,   3,   4,   4,   1,   1
+    3431.102,   286,Finish(2),before,   2,   4,   4,   1,   1
+    3431.102,   286,Finish(2), after,   3,   4,   3,   1,   1
+    3431.102,   289,Finish(1),before,   2,   4,   3,   1,   1
+    3431.102,   289,Finish(1), after,   3,   3,   4,   1,   1
+    3434.481,   295,  Arrival,before,   2,   3,   4,   1,   1
+    3434.481,   295,  Arrival, after,   3,   4,   4,   1,   1
+    3447.651,   298,Finish(2),before,   2,   4,   4,   1,   1
+    3447.651,   298,Finish(2), after,   3,   4,   3,   1,   1
+    3456.102,   300,Finish(1),before,   2,   4,   3,   1,   1
+    3456.102,   300,Finish(1), after,   3,   3,   4,   1,   1
+    3481.102,   305,Finish(1),before,   2,   3,   4,   1,   1
+    3481.102,   305,Finish(1), after,   3,   3,   4,   1,   1
+    3607.353,   301,  Arrival,before,   2,   3,   4,   1,   1
+    3607.353,   301,  Arrival, after,   3,   4,   4,   1,   1
+    3607.353,   305,Finish(1),before,   2,   4,   4,   1,   1
+    3607.353,   305,Finish(1), after,   3,   4,   4,   1,   1
+    3616.705,   307,  Arrival,before,   2,   4,   4,   1,   1
+    3616.705,   307,  Arrival, after,   3,   5,   4,   1,   1
+    3616.705,   305,Finish(1),before,   2,   5,   4,   1,   1
+    3616.705,   305,Finish(1), after,   3,   5,   4,   1,   1
+    3765.331,   303,Finish(2),before,   2,   5,   4,   1,   1
+    3765.331,   303,Finish(2), after,   3,   5,   3,   1,   1
+    3765.331,   305,Finish(1),before,   2,   5,   3,   1,   1
+    3765.331,   305,Finish(1), after,   3,   4,   4,   1,   1
+    3778.984,   312,Finish(2),before,   2,   4,   4,   1,   1
+    3778.984,   312,Finish(2), after,   3,   4,   3,   1,   1
+    3790.331,   314,Finish(1),before,   2,   4,   3,   1,   1
+    3790.331,   314,Finish(1), after,   3,   3,   4,   1,   1
+    3796.381,   309,  Arrival,before,   2,   3,   4,   1,   1
+    3796.381,   309,  Arrival, after,   3,   4,   4,   1,   1
+    3811.976,   316,Finish(2),before,   2,   4,   4,   1,   1
+    3811.976,   316,Finish(2), after,   3,   4,   3,   1,   1
+    3812.616,   319,  Arrival,before,   2,   4,   3,   1,   1
+    3812.616,   319,  Arrival, after,   3,   5,   3,   1,   1
+    3815.331,   318,Finish(1),before,   2,   5,   3,   1,   1
+    3815.331,   318,Finish(1), after,   3,   4,   4,   1,   1
+    3840.331,   324,Finish(1),before,   2,   4,   4,   1,   1
+    3840.331,   324,Finish(1), after,   3,   4,   4,   1,   1
+    3867.333,   322,  Arrival,before,   2,   4,   4,   1,   1
+    3867.333,   322,  Arrival, after,   3,   5,   4,   1,   1
+    3867.333,   324,Finish(1),before,   2,   5,   4,   1,   1
+    3867.333,   324,Finish(1), after,   3,   5,   4,   1,   1
+    3897.511,   326,  Arrival,before,   2,   5,   4,   1,   1
+    3897.511,   326,  Arrival, after,   3,   6,   4,   1,   1
+    3897.511,   324,Finish(1),before,   2,   6,   4,   1,   1
+    3897.511,   324,Finish(1), after,   3,   6,   4,   1,   1
+    3903.320,   328,  Arrival,before,   2,   6,   4,   1,   1
+    3903.320,   328,  Arrival, after,   3,   7,   4,   1,   1
+    3903.320,   324,Finish(1),before,   2,   7,   4,   1,   1
+    3903.320,   324,Finish(1), after,   3,   7,   4,   1,   1
+    3914.187,   330,  Arrival,before,   2,   7,   4,   1,   1
+    3914.187,   330,  Arrival, after,   3,   8,   4,   1,   1
+    3914.187,   324,Finish(1),before,   2,   8,   4,   1,   1
+    3914.187,   324,Finish(1), after,   3,   8,   4,   1,   1
+    3932.389,   332,  Arrival,before,   2,   8,   4,   1,   1
+    3932.389,   332,  Arrival, after,   3,   9,   4,   1,   1
+    3932.389,   324,Finish(1),before,   2,   9,   4,   1,   1
+    3932.389,   324,Finish(1), after,   3,   9,   4,   1,   1
+    3932.676,   321,Finish(2),before,   2,   9,   4,   1,   1
+    3932.676,   321,Finish(2), after,   3,   9,   3,   1,   1
+    3932.676,   324,Finish(1),before,   2,   9,   3,   1,   1
+    3932.676,   324,Finish(1), after,   3,   8,   4,   1,   1
+    3957.676,   339,Finish(1),before,   2,   8,   4,   1,   1
+    3957.676,   339,Finish(1), after,   3,   8,   4,   1,   1
+    3962.708,   337,Finish(2),before,   2,   8,   4,   1,   1
+    3962.708,   337,Finish(2), after,   3,   8,   3,   1,   1
+    3962.708,   339,Finish(1),before,   2,   8,   3,   1,   1
+    3962.708,   339,Finish(1), after,   3,   7,   4,   1,   1
+    3987.708,   344,Finish(1),before,   2,   7,   4,   1,   1
+    3987.708,   344,Finish(1), after,   3,   7,   4,   1,   1
+    4020.683,   342,Finish(2),before,   2,   7,   4,   1,   1
+    4020.683,   342,Finish(2), after,   3,   7,   3,   1,   1
+    4020.683,   344,Finish(1),before,   2,   7,   3,   1,   1
+    4020.683,   344,Finish(1), after,   3,   6,   4,   1,   1
+    4045.683,   349,Finish(1),before,   2,   6,   4,   1,   1
+    4045.683,   349,Finish(1), after,   3,   6,   4,   1,   1
+    4055.287,   347,Finish(2),before,   2,   6,   4,   1,   1
+    4055.287,   347,Finish(2), after,   3,   6,   3,   1,   1
+    4055.287,   349,Finish(1),before,   2,   6,   3,   1,   1
+    4055.287,   349,Finish(1), after,   3,   5,   4,   1,   1
+    4080.287,   354,Finish(1),before,   2,   5,   4,   1,   1
+    4080.287,   354,Finish(1), after,   3,   5,   4,   1,   1
+    4128.011,   352,Finish(2),before,   2,   5,   4,   1,   1
+    4128.011,   352,Finish(2), after,   3,   5,   3,   1,   1
+    4128.011,   354,Finish(1),before,   2,   5,   3,   1,   1
+    4128.011,   354,Finish(1), after,   3,   4,   4,   1,   1
+    4153.011,   359,Finish(1),before,   2,   4,   4,   1,   1
+    4153.011,   359,Finish(1), after,   3,   4,   4,   1,   1
+    4218.200,   357,Finish(2),before,   2,   4,   4,   1,   1
+    4218.200,   357,Finish(2), after,   3,   4,   3,   1,   1
+    4218.200,   359,Finish(1),before,   2,   4,   3,   1,   1
+    4218.200,   359,Finish(1), after,   3,   3,   4,   1,   1
+    4243.200,   364,Finish(1),before,   2,   3,   4,   1,   1
+    4243.200,   364,Finish(1), after,   3,   3,   4,   1,   1
+    4264.896,   362,Finish(2),before,   2,   3,   4,   1,   1
+    4264.896,   362,Finish(2), after,   3,   3,   3,   1,   1
+    4264.896,   364,Finish(1),before,   2,   3,   3,   1,   1
+    4264.896,   364,Finish(1), after,   3,   2,   4,   1,   1
+    4278.806,   367,Finish(2),before,   2,   2,   4,   1,   1
+    4278.806,   367,Finish(2), after,   3,   2,   3,   1,   1
+    4279.843,   334,  Arrival,before,   2,   2,   3,   1,   1
+    4279.843,   334,  Arrival, after,   3,   3,   3,   1,   1
+    4289.896,   369,Finish(1),before,   2,   3,   3,   1,   1
+    4289.896,   369,Finish(1), after,   3,   2,   4,   1,   1
+    4292.157,   372,  Arrival,before,   2,   2,   4,   1,   1
+    4292.157,   372,  Arrival, after,   3,   3,   4,   1,   1
+    4314.896,   374,Finish(1),before,   2,   3,   4,   1,   1
+    4314.896,   374,Finish(1), after,   3,   3,   4,   1,   1
+    4319.670,   371,Finish(2),before,   2,   3,   4,   1,   1
+    4319.670,   371,Finish(2), after,   3,   3,   3,   1,   1
+    4319.670,   374,Finish(1),before,   2,   3,   3,   1,   1
+    4319.670,   374,Finish(1), after,   3,   2,   4,   1,   1
+    4340.231,   375,  Arrival,before,   2,   2,   4,   1,   1
+    4340.231,   375,  Arrival, after,   3,   3,   4,   1,   1
+    4344.670,   380,Finish(1),before,   2,   3,   4,   1,   1
+    4344.670,   380,Finish(1), after,   3,   3,   4,   1,   1
+    4380.924,   378,Finish(2),before,   2,   3,   4,   1,   1
+    4380.924,   378,Finish(2), after,   3,   3,   3,   1,   1
+    4380.924,   380,Finish(1),before,   2,   3,   3,   1,   1
+    4380.924,   380,Finish(1), after,   3,   2,   4,   1,   1
+    4405.924,   386,Finish(1),before,   2,   2,   4,   1,   1
+    4405.924,   386,Finish(1), after,   3,   2,   4,   1,   1
+    4426.014,   384,Finish(2),before,   2,   2,   4,   1,   1
+    4426.014,   384,Finish(2), after,   3,   2,   3,   1,   1
+    4426.014,   386,Finish(1),before,   2,   2,   3,   1,   1
+    4426.014,   386,Finish(1), after,   3,   1,   4,   1,   1
+    4451.014,   391,Finish(1),before,   2,   1,   4,   1,   1
+    4451.014,   391,Finish(1), after,   3,   1,   4,   1,   1
+    4452.685,   381,  Arrival,before,   2,   1,   4,   1,   1
+    4452.685,   381,  Arrival, after,   3,   2,   4,   1,   1
+    4452.685,   391,Finish(1),before,   2,   2,   4,   1,   1
+    4452.685,   391,Finish(1), after,   3,   2,   4,   1,   1
+    4461.315,   393,  Arrival,before,   2,   2,   4,   1,   1
+    4461.315,   393,  Arrival, after,   3,   3,   4,   1,   1
+    4461.315,   391,Finish(1),before,   2,   3,   4,   1,   1
+    4461.315,   391,Finish(1), after,   3,   3,   4,   1,   1
+    4465.843,   395,  Arrival,before,   2,   3,   4,   1,   1
+    4465.843,   395,  Arrival, after,   3,   4,   4,   1,   1
+    4465.843,   391,Finish(1),before,   2,   4,   4,   1,   1
+    4465.843,   391,Finish(1), after,   3,   4,   4,   1,   1
+    4558.678,   389,Finish(2),before,   2,   4,   4,   1,   1
+    4558.678,   389,Finish(2), after,   3,   4,   3,   1,   1
+    4558.678,   391,Finish(1),before,   2,   4,   3,   1,   1
+    4558.678,   391,Finish(1), after,   3,   3,   4,   1,   1
+    4583.678,   402,Finish(1),before,   2,   3,   4,   1,   1
+    4583.678,   402,Finish(1), after,   3,   3,   4,   1,   1
+    4603.245,   397,  Arrival,before,   2,   3,   4,   1,   1
+    4603.245,   397,  Arrival, after,   3,   4,   4,   1,   1
+    4603.245,   402,Finish(1),before,   2,   4,   4,   1,   1
+    4603.245,   402,Finish(1), after,   3,   4,   4,   1,   1
+    4609.046,   400,Finish(2),before,   2,   4,   4,   1,   1
+    4609.046,   400,Finish(2), after,   3,   4,   3,   1,   1
+    4609.046,   402,Finish(1),before,   2,   4,   3,   1,   1
+    4609.046,   402,Finish(1), after,   3,   3,   4,   1,   1
+    4634.046,   409,Finish(1),before,   2,   3,   4,   1,   1
+    4634.046,   409,Finish(1), after,   3,   3,   4,   1,   1
+    4643.086,   407,Finish(2),before,   2,   3,   4,   1,   1
+    4643.086,   407,Finish(2), after,   3,   3,   3,   1,   1
+    4643.086,   409,Finish(1),before,   2,   3,   3,   1,   1
+    4643.086,   409,Finish(1), after,   3,   2,   4,   1,   1
+    4643.973,   412,Finish(2),before,   2,   2,   4,   1,   1
+    4643.973,   412,Finish(2), after,   3,   2,   3,   1,   1
+    4668.086,   414,Finish(1),before,   2,   2,   3,   1,   1
+    4668.086,   414,Finish(1), after,   3,   1,   4,   1,   1
+    4693.086,   418,Finish(1),before,   2,   1,   4,   1,   1
+    4693.086,   418,Finish(1), after,   3,   1,   4,   1,   1
+    4698.612,   416,Finish(2),before,   2,   1,   4,   1,   1
+    4698.612,   416,Finish(2), after,   3,   1,   3,   1,   1
+    4698.612,   418,Finish(1),before,   2,   1,   3,   1,   1
+    4698.612,   418,Finish(1), after,   3,   0,   4,   1,   1
+    4723.612,   423,Finish(1),before,   2,   0,   4,   1,   1
+    4723.612,   423,Finish(1), after,   3,   0,   4,   1,   1
+    4894.195,   421,Finish(2),before,   2,   0,   4,   1,   1
+    4894.195,   421,Finish(2), after,   3,   0,   3,   1,   1
+    4894.195,   423,Finish(1),before,   2,   0,   3,   1,   1
+    4894.195,   423,Finish(1), after,   2,   0,   4,   0,   1
+    4910.341,   404,  Arrival,before,   1,   0,   4,   0,   1
+    4910.341,   404,  Arrival, after,   3,   0,   4,   1,   1
+    4928.518,   428,  Arrival,before,   2,   0,   4,   1,   1
+    4928.518,   428,  Arrival, after,   3,   1,   4,   1,   1
+    4935.341,   429,Finish(1),before,   2,   1,   4,   1,   1
+    4935.341,   429,Finish(1), after,   3,   1,   4,   1,   1
+    4992.148,   426,Finish(2),before,   2,   1,   4,   1,   1
+    4992.148,   426,Finish(2), after,   3,   1,   3,   1,   1
+    4992.148,   429,Finish(1),before,   2,   1,   3,   1,   1
+    4992.148,   429,Finish(1), after,   3,   0,   4,   1,   1
+    5017.148,   435,Finish(1),before,   2,   0,   4,   1,   1
+    5017.148,   435,Finish(1), after,   3,   0,   4,   1,   1
+    5054.410,   430,  Arrival,before,   2,   0,   4,   1,   1
+    5054.410,   430,  Arrival, after,   3,   1,   4,   1,   1
+    5054.410,   435,Finish(1),before,   2,   1,   4,   1,   1
+    5054.410,   435,Finish(1), after,   3,   1,   4,   1,   1
+    5079.212,   437,  Arrival,before,   2,   1,   4,   1,   1
+    5079.212,   437,  Arrival, after,   3,   2,   4,   1,   1
+    5079.212,   435,Finish(1),before,   2,   2,   4,   1,   1
+    5079.212,   435,Finish(1), after,   3,   2,   4,   1,   1
+    5159.807,   433,Finish(2),before,   2,   2,   4,   1,   1
+    5159.807,   433,Finish(2), after,   3,   2,   3,   1,   1
+    5159.807,   435,Finish(1),before,   2,   2,   3,   1,   1
+    5159.807,   435,Finish(1), after,   3,   1,   4,   1,   1
+    5179.638,   442,Finish(2),before,   2,   1,   4,   1,   1
+    5179.638,   442,Finish(2), after,   3,   1,   3,   1,   1
+    5184.807,   444,Finish(1),before,   2,   1,   3,   1,   1
+    5184.807,   444,Finish(1), after,   3,   0,   4,   1,   1
+    5190.236,   446,Finish(2),before,   2,   0,   4,   1,   1
+    5190.236,   446,Finish(2), after,   3,   0,   3,   1,   1
+    5196.947,   439,  Arrival,before,   2,   0,   3,   1,   1
+    5196.947,   439,  Arrival, after,   3,   1,   3,   1,   1
+    5208.786,   450,Finish(2),before,   2,   1,   3,   1,   1
+    5208.786,   450,Finish(2), after,   3,   1,   2,   1,   1
+    5209.807,   448,Finish(1),before,   2,   1,   2,   1,   1
+    5209.807,   448,Finish(1), after,   3,   0,   3,   1,   1
+    5215.758,   451,  Arrival,before,   2,   0,   3,   1,   1
+    5215.758,   451,  Arrival, after,   3,   1,   3,   1,   1
+    5234.807,   455,Finish(1),before,   2,   1,   3,   1,   1
+    5234.807,   455,Finish(1), after,   3,   0,   4,   1,   1
+    5244.228,   453,Finish(2),before,   2,   0,   4,   1,   1
+    5244.228,   453,Finish(2), after,   3,   0,   3,   1,   1
+    5259.807,   458,Finish(1),before,   2,   0,   3,   1,   1
+    5259.807,   458,Finish(1), after,   2,   0,   4,   0,   1
+    5264.385,   456,  Arrival,before,   1,   0,   4,   0,   1
+    5264.385,   456,  Arrival, after,   3,   0,   4,   1,   1
+    5289.385,   463,Finish(1),before,   2,   0,   4,   1,   1
+    5289.385,   463,Finish(1), after,   3,   0,   4,   1,   1
+    5291.022,   462,  Arrival,before,   2,   0,   4,   1,   1
+    5291.022,   462,  Arrival, after,   3,   1,   4,   1,   1
+    5291.022,   463,Finish(1),before,   2,   1,   4,   1,   1
+    5291.022,   463,Finish(1), after,   3,   1,   4,   1,   1
+    5303.536,   460,Finish(2),before,   2,   1,   4,   1,   1
+    5303.536,   460,Finish(2), after,   3,   1,   3,   1,   1
+    5303.536,   463,Finish(1),before,   2,   1,   3,   1,   1
+    5303.536,   463,Finish(1), after,   3,   0,   4,   1,   1
+    5328.536,   470,Finish(1),before,   2,   0,   4,   1,   1
+    5328.536,   470,Finish(1), after,   3,   0,   4,   1,   1
+    5360.039,   465,  Arrival,before,   2,   0,   4,   1,   1
+    5360.039,   465,  Arrival, after,   3,   1,   4,   1,   1
+    5360.039,   470,Finish(1),before,   2,   1,   4,   1,   1
+    5360.039,   470,Finish(1), after,   3,   1,   4,   1,   1
+    5404.583,   472,  Arrival,before,   2,   1,   4,   1,   1
+    5404.583,   472,  Arrival, after,   3,   2,   4,   1,   1
+    5404.583,   470,Finish(1),before,   2,   2,   4,   1,   1
+    5404.583,   470,Finish(1), after,   3,   2,   4,   1,   1
+    5451.031,   474,  Arrival,before,   2,   2,   4,   1,   1
+    5451.031,   474,  Arrival, after,   3,   3,   4,   1,   1
+    5451.031,   470,Finish(1),before,   2,   3,   4,   1,   1
+    5451.031,   470,Finish(1), after,   3,   3,   4,   1,   1
+    5483.483,   476,  Arrival,before,   2,   3,   4,   1,   1
+    5483.483,   476,  Arrival, after,   3,   4,   4,   1,   1
+    5483.483,   470,Finish(1),before,   2,   4,   4,   1,   1
+    5483.483,   470,Finish(1), after,   3,   4,   4,   1,   1
+    5484.115,   468,Finish(2),before,   2,   4,   4,   1,   1
+    5484.115,   468,Finish(2), after,   3,   4,   3,   1,   1
+    5484.115,   470,Finish(1),before,   2,   4,   3,   1,   1
+    5484.115,   470,Finish(1), after,   3,   3,   4,   1,   1
+    5501.878,   478,  Arrival,before,   2,   3,   4,   1,   1
+    5501.878,   478,  Arrival, after,   3,   4,   4,   1,   1
+    5509.115,   483,Finish(1),before,   2,   4,   4,   1,   1
+    5509.115,   483,Finish(1), after,   3,   4,   4,   1,   1
+    5528.737,   484,  Arrival,before,   2,   4,   4,   1,   1
+    5528.737,   484,  Arrival, after,   3,   5,   4,   1,   1
+    5528.737,   483,Finish(1),before,   2,   5,   4,   1,   1
+    5528.737,   483,Finish(1), after,   3,   5,   4,   1,   1
+    5542.626,   481,Finish(2),before,   2,   5,   4,   1,   1
+    5542.626,   481,Finish(2), after,   3,   5,   3,   1,   1
+    5542.626,   483,Finish(1),before,   2,   5,   3,   1,   1
+    5542.626,   483,Finish(1), after,   3,   4,   4,   1,   1
+    5567.626,   491,Finish(1),before,   2,   4,   4,   1,   1
+    5567.626,   491,Finish(1), after,   3,   4,   4,   1,   1
+    5571.010,   486,  Arrival,before,   2,   4,   4,   1,   1
+    5571.010,   486,  Arrival, after,   3,   5,   4,   1,   1
+    5571.010,   491,Finish(1),before,   2,   5,   4,   1,   1
+    5571.010,   491,Finish(1), after,   3,   5,   4,   1,   1
+    5604.798,   489,Finish(2),before,   2,   5,   4,   1,   1
+    5604.798,   489,Finish(2), after,   3,   5,   3,   1,   1
+    5604.798,   491,Finish(1),before,   2,   5,   3,   1,   1
+    5604.798,   491,Finish(1), after,   3,   4,   4,   1,   1
+    5629.798,   498,Finish(1),before,   2,   4,   4,   1,   1
+    5629.798,   498,Finish(1), after,   3,   4,   4,   1,   1
+    5635.805,   493,  Arrival,before,   2,   4,   4,   1,   1
+    5635.805,   493,  Arrival, after,   3,   5,   4,   1,   1
+    5635.805,   498,Finish(1),before,   2,   5,   4,   1,   1
+    5635.805,   498,Finish(1), after,   3,   5,   4,   1,   1
+    5635.838,   500,  Arrival,before,   2,   5,   4,   1,   1
+    5635.838,   500,  Arrival, after,   3,   6,   4,   1,   1
+    5635.838,   498,Finish(1),before,   2,   6,   4,   1,   1
+    5635.838,   498,Finish(1), after,   3,   6,   4,   1,   1
+    5640.438,   496,Finish(2),before,   2,   6,   4,   1,   1
+    5640.438,   496,Finish(2), after,   3,   6,   3,   1,   1
+    5640.438,   498,Finish(1),before,   2,   6,   3,   1,   1
+    5640.438,   498,Finish(1), after,   3,   5,   4,   1,   1
+    5665.438,   507,Finish(1),before,   2,   5,   4,   1,   1
+    5665.438,   507,Finish(1), after,   3,   5,   4,   1,   1
+    5666.041,   502,  Arrival,before,   2,   5,   4,   1,   1
+    5666.041,   502,  Arrival, after,   3,   6,   4,   1,   1
+    5666.041,   507,Finish(1),before,   2,   6,   4,   1,   1
+    5666.041,   507,Finish(1), after,   3,   6,   4,   1,   1
+    5669.832,   505,Finish(2),before,   2,   6,   4,   1,   1
+    5669.832,   505,Finish(2), after,   3,   6,   3,   1,   1
+    5669.832,   507,Finish(1),before,   2,   6,   3,   1,   1
+    5669.832,   507,Finish(1), after,   3,   5,   4,   1,   1
+    5682.434,   509,  Arrival,before,   2,   5,   4,   1,   1
+    5682.434,   509,  Arrival, after,   3,   6,   4,   1,   1
+    5684.331,   515,  Arrival,before,   2,   6,   4,   1,   1
+    5684.331,   515,  Arrival, after,   3,   7,   4,   1,   1
+    5694.832,   514,Finish(1),before,   2,   7,   4,   1,   1
+    5694.832,   514,Finish(1), after,   3,   7,   4,   1,   1
+    5813.108,   516,  Arrival,before,   2,   7,   4,   1,   1
+    5813.108,   516,  Arrival, after,   3,   8,   4,   1,   1
+    5813.108,   514,Finish(1),before,   2,   8,   4,   1,   1
+    5813.108,   514,Finish(1), after,   3,   8,   4,   1,   1
+    5903.432,   518,  Arrival,before,   2,   8,   4,   1,   1
+    5903.432,   518,  Arrival, after,   3,   9,   4,   1,   1
+    5903.432,   514,Finish(1),before,   2,   9,   4,   1,   1
+    5903.432,   514,Finish(1), after,   3,   9,   4,   1,   1
+    5937.534,   512,Finish(2),before,   2,   9,   4,   1,   1
+    5937.534,   512,Finish(2), after,   3,   9,   3,   1,   1
+    5937.534,   514,Finish(1),before,   2,   9,   3,   1,   1
+    5937.534,   514,Finish(1), after,   3,   8,   4,   1,   1
+    5962.534,   525,Finish(1),before,   2,   8,   4,   1,   1
+    5962.534,   525,Finish(1), after,   3,   8,   4,   1,   1
+    5977.874,   520,  Arrival,before,   2,   8,   4,   1,   1
+    5977.874,   520,  Arrival, after,   3,   9,   4,   1,   1
+    5977.874,   525,Finish(1),before,   2,   9,   4,   1,   1
+    5977.874,   525,Finish(1), after,   3,   9,   4,   1,   1
+    6010.770,   527,  Arrival,before,   2,   9,   4,   1,   1
+    6010.770,   527,  Arrival, after,   3,  10,   4,   1,   1
+    6010.770,   525,Finish(1),before,   2,  10,   4,   1,   1
+    6010.770,   525,Finish(1), after,   3,  10,   4,   1,   1
+    6017.001,   523,Finish(2),before,   2,  10,   4,   1,   1
+    6017.001,   523,Finish(2), after,   3,  10,   3,   1,   1
+    6017.001,   525,Finish(1),before,   2,  10,   3,   1,   1
+    6017.001,   525,Finish(1), after,   3,   9,   4,   1,   1
+    6042.001,   534,Finish(1),before,   2,   9,   4,   1,   1
+    6042.001,   534,Finish(1), after,   3,   9,   4,   1,   1
+    6063.584,   529,  Arrival,before,   2,   9,   4,   1,   1
+    6063.584,   529,  Arrival, after,   3,  10,   4,   1,   1
+    6063.584,   534,Finish(1),before,   2,  10,   4,   1,   1
+    6063.584,   534,Finish(1), after,   3,  10,   4,   1,   1
+    6069.464,   532,Finish(2),before,   2,  10,   4,   1,   1
+    6069.464,   532,Finish(2), after,   3,  10,   3,   1,   1
+    6069.464,   534,Finish(1),before,   2,  10,   3,   1,   1
+    6069.464,   534,Finish(1), after,   3,   9,   4,   1,   1
+    6094.464,   541,Finish(1),before,   2,   9,   4,   1,   1
+    6094.464,   541,Finish(1), after,   3,   9,   4,   1,   1
+    6157.971,   539,Finish(2),before,   2,   9,   4,   1,   1
+    6157.971,   539,Finish(2), after,   3,   9,   3,   1,   1
+    6157.971,   541,Finish(1),before,   2,   9,   3,   1,   1
+    6157.971,   541,Finish(1), after,   3,   8,   4,   1,   1
+    6176.666,   536,  Arrival,before,   2,   8,   4,   1,   1
+    6176.666,   536,  Arrival, after,   3,   9,   4,   1,   1
+    6182.971,   546,Finish(1),before,   2,   9,   4,   1,   1
+    6182.971,   546,Finish(1), after,   3,   9,   4,   1,   1
+    6193.625,   547,  Arrival,before,   2,   9,   4,   1,   1
+    6193.625,   547,  Arrival, after,   3,  10,   4,   1,   1
+    6193.625,   546,Finish(1),before,   2,  10,   4,   1,   1
+    6193.625,   546,Finish(1), after,   3,  10,   4,   1,   1
+    6197.089,   549,  Arrival,before,   2,  10,   4,   1,   1
+    6197.089,   549,  Arrival, after,   3,  11,   4,   1,   1
+    6197.089,   546,Finish(1),before,   2,  11,   4,   1,   1
+    6197.089,   546,Finish(1), after,   3,  11,   4,   1,   1
+    6201.369,   544,Finish(2),before,   2,  11,   4,   1,   1
+    6201.369,   544,Finish(2), after,   3,  11,   3,   1,   1
+    6201.369,   546,Finish(1),before,   2,  11,   3,   1,   1
+    6201.369,   546,Finish(1), after,   3,  10,   4,   1,   1
+    6213.687,   554,Finish(2),before,   2,  10,   4,   1,   1
+    6213.687,   554,Finish(2), after,   3,  10,   3,   1,   1
+    6226.369,   556,Finish(1),before,   2,  10,   3,   1,   1
+    6226.369,   556,Finish(1), after,   3,   9,   4,   1,   1
+    6251.250,   551,  Arrival,before,   2,   9,   4,   1,   1
+    6251.250,   551,  Arrival, after,   3,  10,   4,   1,   1
+    6251.369,   560,Finish(1),before,   2,  10,   4,   1,   1
+    6251.369,   560,Finish(1), after,   3,  10,   4,   1,   1
+    6262.781,   558,Finish(2),before,   2,  10,   4,   1,   1
+    6262.781,   558,Finish(2), after,   3,  10,   3,   1,   1
+    6262.781,   560,Finish(1),before,   2,  10,   3,   1,   1
+    6262.781,   560,Finish(1), after,   3,   9,   4,   1,   1
+    6287.781,   566,Finish(1),before,   2,   9,   4,   1,   1
+    6287.781,   566,Finish(1), after,   3,   9,   4,   1,   1
+    6293.787,   564,Finish(2),before,   2,   9,   4,   1,   1
+    6293.787,   564,Finish(2), after,   3,   9,   3,   1,   1
+    6293.787,   566,Finish(1),before,   2,   9,   3,   1,   1
+    6293.787,   566,Finish(1), after,   3,   8,   4,   1,   1
+    6295.122,   561,  Arrival,before,   2,   8,   4,   1,   1
+    6295.122,   561,  Arrival, after,   3,   9,   4,   1,   1
+    6295.888,   572,  Arrival,before,   2,   9,   4,   1,   1
+    6295.888,   572,  Arrival, after,   3,  10,   4,   1,   1
+    6318.787,   571,Finish(1),before,   2,  10,   4,   1,   1
+    6318.787,   571,Finish(1), after,   3,  10,   4,   1,   1
+    6463.788,   569,Finish(2),before,   2,  10,   4,   1,   1
+    6463.788,   569,Finish(2), after,   3,  10,   3,   1,   1
+    6463.788,   571,Finish(1),before,   2,  10,   3,   1,   1
+    6463.788,   571,Finish(1), after,   3,   9,   4,   1,   1
+    6469.300,   573,  Arrival,before,   2,   9,   4,   1,   1
+    6469.300,   573,  Arrival, after,   3,  10,   4,   1,   1
+    6488.788,   578,Finish(1),before,   2,  10,   4,   1,   1
+    6488.788,   578,Finish(1), after,   3,  10,   4,   1,   1
+    6529.302,   579,  Arrival,before,   2,  10,   4,   1,   1
+    6529.302,   579,  Arrival, after,   3,  11,   4,   1,   1
+    6529.302,   578,Finish(1),before,   2,  11,   4,   1,   1
+    6529.302,   578,Finish(1), after,   3,  11,   4,   1,   1
+    6538.560,   581,  Arrival,before,   2,  11,   4,   1,   1
+    6538.560,   581,  Arrival, after,   3,  12,   4,   1,   1
+    6538.560,   578,Finish(1),before,   2,  12,   4,   1,   1
+    6538.560,   578,Finish(1), after,   3,  12,   4,   1,   1
+    6560.433,   583,  Arrival,before,   2,  12,   4,   1,   1
+    6560.433,   583,  Arrival, after,   3,  13,   4,   1,   1
+    6560.433,   578,Finish(1),before,   2,  13,   4,   1,   1
+    6560.433,   578,Finish(1), after,   3,  13,   4,   1,   1
+    6573.609,   576,Finish(2),before,   2,  13,   4,   1,   1
+    6573.609,   576,Finish(2), after,   3,  13,   3,   1,   1
+    6573.609,   578,Finish(1),before,   2,  13,   3,   1,   1
+    6573.609,   578,Finish(1), after,   3,  12,   4,   1,   1
+    6578.246,   588,Finish(2),before,   2,  12,   4,   1,   1
+    6578.246,   588,Finish(2), after,   3,  12,   3,   1,   1
+    6598.609,   590,Finish(1),before,   2,  12,   3,   1,   1
+    6598.609,   590,Finish(1), after,   3,  11,   4,   1,   1
+    6623.609,   594,Finish(1),before,   2,  11,   4,   1,   1
+    6623.609,   594,Finish(1), after,   3,  11,   4,   1,   1
+    6658.867,   592,Finish(2),before,   2,  11,   4,   1,   1
+    6658.867,   592,Finish(2), after,   3,  11,   3,   1,   1
+    6658.867,   594,Finish(1),before,   2,  11,   3,   1,   1
+    6658.867,   594,Finish(1), after,   3,  10,   4,   1,   1
+    6683.867,   599,Finish(1),before,   2,  10,   4,   1,   1
+    6683.867,   599,Finish(1), after,   3,  10,   4,   1,   1
+    6732.499,   585,  Arrival,before,   2,  10,   4,   1,   1
+    6732.499,   585,  Arrival, after,   3,  11,   4,   1,   1
+    6732.499,   599,Finish(1),before,   2,  11,   4,   1,   1
+    6732.499,   599,Finish(1), after,   3,  11,   4,   1,   1
+    6737.121,   597,Finish(2),before,   2,  11,   4,   1,   1
+    6737.121,   597,Finish(2), after,   3,  11,   3,   1,   1
+    6737.121,   599,Finish(1),before,   2,  11,   3,   1,   1
+    6737.121,   599,Finish(1), after,   3,  10,   4,   1,   1
+    6762.121,   606,Finish(1),before,   2,  10,   4,   1,   1
+    6762.121,   606,Finish(1), after,   3,  10,   4,   1,   1
+    6765.837,   601,  Arrival,before,   2,  10,   4,   1,   1
+    6765.837,   601,  Arrival, after,   3,  11,   4,   1,   1
+    6765.837,   606,Finish(1),before,   2,  11,   4,   1,   1
+    6765.837,   606,Finish(1), after,   3,  11,   4,   1,   1
+    6775.761,   604,Finish(2),before,   2,  11,   4,   1,   1
+    6775.761,   604,Finish(2), after,   3,  11,   3,   1,   1
+    6775.761,   606,Finish(1),before,   2,  11,   3,   1,   1
+    6775.761,   606,Finish(1), after,   3,  10,   4,   1,   1
+    6794.850,   611,Finish(2),before,   2,  10,   4,   1,   1
+    6794.850,   611,Finish(2), after,   3,  10,   3,   1,   1
+    6800.761,   613,Finish(1),before,   2,  10,   3,   1,   1
+    6800.761,   613,Finish(1), after,   3,   9,   4,   1,   1
+    6825.761,   617,Finish(1),before,   2,   9,   4,   1,   1
+    6825.761,   617,Finish(1), after,   3,   9,   4,   1,   1
+    6852.255,   615,Finish(2),before,   2,   9,   4,   1,   1
+    6852.255,   615,Finish(2), after,   3,   9,   3,   1,   1
+    6852.255,   617,Finish(1),before,   2,   9,   3,   1,   1
+    6852.255,   617,Finish(1), after,   3,   8,   4,   1,   1
+    6877.255,   622,Finish(1),before,   2,   8,   4,   1,   1
+    6877.255,   622,Finish(1), after,   3,   8,   4,   1,   1
+    6899.450,   620,Finish(2),before,   2,   8,   4,   1,   1
+    6899.450,   620,Finish(2), after,   3,   8,   3,   1,   1
+    6899.450,   622,Finish(1),before,   2,   8,   3,   1,   1
+    6899.450,   622,Finish(1), after,   3,   7,   4,   1,   1
+    6924.450,   627,Finish(1),before,   2,   7,   4,   1,   1
+    6924.450,   627,Finish(1), after,   3,   7,   4,   1,   1
+    6954.462,   608,  Arrival,before,   2,   7,   4,   1,   1
+    6954.462,   608,  Arrival, after,   3,   8,   4,   1,   1
+    6954.462,   627,Finish(1),before,   2,   8,   4,   1,   1
+    6954.462,   627,Finish(1), after,   3,   8,   4,   1,   1
+    6991.824,   625,Finish(2),before,   2,   8,   4,   1,   1
+    6991.824,   625,Finish(2), after,   3,   8,   3,   1,   1
+    6991.824,   627,Finish(1),before,   2,   8,   3,   1,   1
+    6991.824,   627,Finish(1), after,   3,   7,   4,   1,   1
+    7016.824,   634,Finish(1),before,   2,   7,   4,   1,   1
+    7016.824,   634,Finish(1), after,   3,   7,   4,   1,   1
+    7026.736,   632,Finish(2),before,   2,   7,   4,   1,   1
+    7026.736,   632,Finish(2), after,   3,   7,   3,   1,   1
+    7026.736,   634,Finish(1),before,   2,   7,   3,   1,   1
+    7026.736,   634,Finish(1), after,   3,   6,   4,   1,   1
+    7051.736,   639,Finish(1),before,   2,   6,   4,   1,   1
+    7051.736,   639,Finish(1), after,   3,   6,   4,   1,   1
+    7073.950,   637,Finish(2),before,   2,   6,   4,   1,   1
+    7073.950,   637,Finish(2), after,   3,   6,   3,   1,   1
+    7073.950,   639,Finish(1),before,   2,   6,   3,   1,   1
+    7073.950,   639,Finish(1), after,   3,   5,   4,   1,   1
+    7082.950,   629,  Arrival,before,   2,   5,   4,   1,   1
+    7082.950,   629,  Arrival, after,   3,   6,   4,   1,   1
+    7086.010,   642,Finish(2),before,   2,   6,   4,   1,   1
+    7086.010,   642,Finish(2), after,   3,   6,   3,   1,   1
+    7095.754,   647,Finish(2),before,   2,   6,   3,   1,   1
+    7095.754,   647,Finish(2), after,   3,   6,   2,   1,   1
+    7098.950,   644,Finish(1),before,   2,   6,   2,   1,   1
+    7098.950,   644,Finish(1), after,   3,   5,   3,   1,   1
+    7123.950,   651,Finish(1),before,   2,   5,   3,   1,   1
+    7123.950,   651,Finish(1), after,   3,   4,   4,   1,   1
+    7132.763,   645,  Arrival,before,   2,   4,   4,   1,   1
+    7132.763,   645,  Arrival, after,   3,   5,   4,   1,   1
+    7145.464,   654,  Arrival,before,   2,   5,   4,   1,   1
+    7145.464,   654,  Arrival, after,   3,   6,   4,   1,   1
+    7148.950,   653,Finish(1),before,   2,   6,   4,   1,   1
+    7148.950,   653,Finish(1), after,   3,   6,   4,   1,   1
+    7210.545,   649,Finish(2),before,   2,   6,   4,   1,   1
+    7210.545,   649,Finish(2), after,   3,   6,   3,   1,   1
+    7210.545,   653,Finish(1),before,   2,   6,   3,   1,   1
+    7210.545,   653,Finish(1), after,   3,   5,   4,   1,   1
+    7214.391,   658,Finish(2),before,   2,   5,   4,   1,   1
+    7214.391,   658,Finish(2), after,   3,   5,   3,   1,   1
+    7235.545,   660,Finish(1),before,   2,   5,   3,   1,   1
+    7235.545,   660,Finish(1), after,   3,   4,   4,   1,   1
+    7260.545,   664,Finish(1),before,   2,   4,   4,   1,   1
+    7260.545,   664,Finish(1), after,   3,   4,   4,   1,   1
+    7310.709,   655,  Arrival,before,   2,   4,   4,   1,   1
+    7310.709,   655,  Arrival, after,   3,   5,   4,   1,   1
+    7310.709,   664,Finish(1),before,   2,   5,   4,   1,   1
+    7310.709,   664,Finish(1), after,   3,   5,   4,   1,   1
+    7358.556,   662,Finish(2),before,   2,   5,   4,   1,   1
+    7358.556,   662,Finish(2), after,   3,   5,   3,   1,   1
+    7358.556,   664,Finish(1),before,   2,   5,   3,   1,   1
+    7358.556,   664,Finish(1), after,   3,   4,   4,   1,   1
+    7383.556,   671,Finish(1),before,   2,   4,   4,   1,   1
+    7383.556,   671,Finish(1), after,   3,   4,   4,   1,   1
+    7396.596,   666,  Arrival,before,   2,   4,   4,   1,   1
+    7396.596,   666,  Arrival, after,   3,   5,   4,   1,   1
+    7396.596,   671,Finish(1),before,   2,   5,   4,   1,   1
+    7396.596,   671,Finish(1), after,   3,   5,   4,   1,   1
+    7403.776,   669,Finish(2),before,   2,   5,   4,   1,   1
+    7403.776,   669,Finish(2), after,   3,   5,   3,   1,   1
+    7403.776,   671,Finish(1),before,   2,   5,   3,   1,   1
+    7403.776,   671,Finish(1), after,   3,   4,   4,   1,   1
+    7410.391,   673,  Arrival,before,   2,   4,   4,   1,   1
+    7410.391,   673,  Arrival, after,   3,   5,   4,   1,   1
+    7416.184,   676,Finish(2),before,   2,   5,   4,   1,   1
+    7416.184,   676,Finish(2), after,   3,   5,   3,   1,   1
+    7428.776,   678,Finish(1),before,   2,   5,   3,   1,   1
+    7428.776,   678,Finish(1), after,   3,   4,   4,   1,   1
+    7430.307,   681,Finish(2),before,   2,   4,   4,   1,   1
+    7430.307,   681,Finish(2), after,   3,   4,   3,   1,   1
+    7453.776,   683,Finish(1),before,   2,   4,   3,   1,   1
+    7453.776,   683,Finish(1), after,   3,   3,   4,   1,   1
+    7478.776,   687,Finish(1),before,   2,   3,   4,   1,   1
+    7478.776,   687,Finish(1), after,   3,   3,   4,   1,   1
+    7479.592,   679,  Arrival,before,   2,   3,   4,   1,   1
+    7479.592,   679,  Arrival, after,   3,   4,   4,   1,   1
+    7479.592,   687,Finish(1),before,   2,   4,   4,   1,   1
+    7479.592,   687,Finish(1), after,   3,   4,   4,   1,   1
+    7536.300,   689,  Arrival,before,   2,   4,   4,   1,   1
+    7536.300,   689,  Arrival, after,   3,   5,   4,   1,   1
+    7536.300,   687,Finish(1),before,   2,   5,   4,   1,   1
+    7536.300,   687,Finish(1), after,   3,   5,   4,   1,   1
+    7557.774,   691,  Arrival,before,   2,   5,   4,   1,   1
+    7557.774,   691,  Arrival, after,   3,   6,   4,   1,   1
+    7557.774,   687,Finish(1),before,   2,   6,   4,   1,   1
+    7557.774,   687,Finish(1), after,   3,   6,   4,   1,   1
+    7616.516,   685,Finish(2),before,   2,   6,   4,   1,   1
+    7616.516,   685,Finish(2), after,   3,   6,   3,   1,   1
+    7616.516,   687,Finish(1),before,   2,   6,   3,   1,   1
+    7616.516,   687,Finish(1), after,   3,   5,   4,   1,   1
+    7633.039,   693,  Arrival,before,   2,   5,   4,   1,   1
+    7633.039,   693,  Arrival, after,   3,   6,   4,   1,   1
+    7641.516,   698,Finish(1),before,   2,   6,   4,   1,   1
+    7641.516,   698,Finish(1), after,   3,   6,   4,   1,   1
+    7660.252,   696,Finish(2),before,   2,   6,   4,   1,   1
+    7660.252,   696,Finish(2), after,   3,   6,   3,   1,   1
+    7660.252,   698,Finish(1),before,   2,   6,   3,   1,   1
+    7660.252,   698,Finish(1), after,   3,   5,   4,   1,   1
+    7685.252,   704,Finish(1),before,   2,   5,   4,   1,   1
+    7685.252,   704,Finish(1), after,   3,   5,   4,   1,   1
+    7706.616,   702,Finish(2),before,   2,   5,   4,   1,   1
+    7706.616,   702,Finish(2), after,   3,   5,   3,   1,   1
+    7706.616,   704,Finish(1),before,   2,   5,   3,   1,   1
+    7706.616,   704,Finish(1), after,   3,   4,   4,   1,   1
+    7731.616,   709,Finish(1),before,   2,   4,   4,   1,   1
+    7731.616,   709,Finish(1), after,   3,   4,   4,   1,   1
+    7815.015,   707,Finish(2),before,   2,   4,   4,   1,   1
+    7815.015,   707,Finish(2), after,   3,   4,   3,   1,   1
+    7815.015,   709,Finish(1),before,   2,   4,   3,   1,   1
+    7815.015,   709,Finish(1), after,   3,   3,   4,   1,   1
+    7815.647,   712,Finish(2),before,   2,   3,   4,   1,   1
+    7815.647,   712,Finish(2), after,   3,   3,   3,   1,   1
+    7839.539,   716,Finish(2),before,   2,   3,   3,   1,   1
+    7839.539,   716,Finish(2), after,   3,   3,   2,   1,   1
+    7840.015,   714,Finish(1),before,   2,   3,   2,   1,   1
+    7840.015,   714,Finish(1), after,   3,   2,   3,   1,   1
+    7858.178,   718,Finish(2),before,   2,   2,   3,   1,   1
+    7858.178,   718,Finish(2), after,   3,   2,   2,   1,   1
+    7865.015,   720,Finish(1),before,   2,   2,   2,   1,   1
+    7865.015,   720,Finish(1), after,   3,   1,   3,   1,   1
+    7890.015,   724,Finish(1),before,   2,   1,   3,   1,   1
+    7890.015,   724,Finish(1), after,   3,   0,   4,   1,   1
+    7907.804,   722,Finish(2),before,   2,   0,   4,   1,   1
+    7907.804,   722,Finish(2), after,   3,   0,   3,   1,   1
+    7915.015,   726,Finish(1),before,   2,   0,   3,   1,   1
+    7915.015,   726,Finish(1), after,   2,   0,   4,   0,   1
+    7916.657,   699,  Arrival,before,   1,   0,   4,   0,   1
+    7916.657,   699,  Arrival, after,   3,   0,   4,   1,   1
+    7941.657,   731,Finish(1),before,   2,   0,   4,   1,   1
+    7941.657,   731,Finish(1), after,   3,   0,   4,   1,   1
+    8016.907,   728,Finish(2),before,   2,   0,   4,   1,   1
+    8016.907,   728,Finish(2), after,   3,   0,   3,   1,   1
+    8016.907,   731,Finish(1),before,   2,   0,   3,   1,   1
+    8016.907,   731,Finish(1), after,   2,   0,   4,   0,   1
+    8080.413,   734,Finish(2),before,   1,   0,   4,   0,   1
+    8080.413,   734,Finish(2), after,   2,   0,   3,   0,   1
+    8197.295,   730,  Arrival,before,   1,   0,   3,   0,   1
+    8197.295,   730,  Arrival, after,   3,   0,   3,   1,   1
+    8222.295,   739,Finish(1),before,   2,   0,   3,   1,   1
+    8222.295,   739,Finish(1), after,   2,   0,   4,   0,   1
+    8253.232,   737,Finish(2),before,   1,   0,   4,   0,   1
+    8253.232,   737,Finish(2), after,   2,   0,   3,   0,   1
+    8320.352,   742,Finish(2),before,   1,   0,   3,   0,   1
+    8320.352,   742,Finish(2), after,   2,   0,   2,   0,   1
+    8337.539,   744,Finish(2),before,   1,   0,   2,   0,   1
+    8337.539,   744,Finish(2), after,   2,   0,   1,   0,   1
+    8346.844,   746,Finish(2),before,   1,   0,   1,   0,   1
+    8346.844,   746,Finish(2), after,   2,   0,   0,   0,   1
+    8361.838,   748,Finish(2),before,   1,   0,   0,   0,   1
+    8361.838,   748,Finish(2), after,   1,   0,   0,   0,   0
+    8379.064,   738,  Arrival,before,   0,   0,   0,   0,   0
+    8379.064,   738,  Arrival, after,   2,   0,   0,   1,   0
+    8382.352,   750,  Arrival,before,   1,   0,   0,   1,   0
+    8382.352,   750,  Arrival, after,   2,   1,   0,   1,   0
+    8404.064,   751,Finish(1),before,   1,   1,   0,   1,   0
+    8404.064,   751,Finish(1), after,   3,   0,   0,   1,   1
+    8429.064,   754,Finish(1),before,   2,   0,   0,   1,   1
+    8429.064,   754,Finish(1), after,   2,   0,   1,   0,   1
+    8478.853,   755,Finish(2),before,   1,   0,   1,   0,   1
+    8478.853,   755,Finish(2), after,   2,   0,   0,   0,   1
+    8487.799,   758,Finish(2),before,   1,   0,   0,   0,   1
+    8487.799,   758,Finish(2), after,   1,   0,   0,   0,   0
+    8717.976,   752,  Arrival,before,   0,   0,   0,   0,   0
+    8717.976,   752,  Arrival, after,   2,   0,   0,   1,   0
+    8742.976,   761,Finish(1),before,   1,   0,   0,   1,   0
+    8742.976,   761,Finish(1), after,   2,   0,   0,   0,   1
+    8757.167,   763,Finish(2),before,   1,   0,   0,   0,   1
+    8757.167,   763,Finish(2), after,   1,   0,   0,   0,   0
+    8776.235,   760,  Arrival,before,   0,   0,   0,   0,   0
+    8776.235,   760,  Arrival, after,   2,   0,   0,   1,   0
+    8784.465,   765,  Arrival,before,   1,   0,   0,   1,   0
+    8784.465,   765,  Arrival, after,   2,   1,   0,   1,   0
+    8801.235,   766,Finish(1),before,   1,   1,   0,   1,   0
+    8801.235,   766,Finish(1), after,   3,   0,   0,   1,   1
+    8812.005,   770,Finish(2),before,   2,   0,   0,   1,   1
+    8812.005,   770,Finish(2), after,   2,   0,   0,   1,   0
+    8826.235,   769,Finish(1),before,   1,   0,   0,   1,   0
+    8826.235,   769,Finish(1), after,   2,   0,   0,   0,   1
+    8852.863,   767,  Arrival,before,   1,   0,   0,   0,   1
+    8852.863,   767,  Arrival, after,   3,   0,   0,   1,   1
+    8861.731,   773,Finish(2),before,   2,   0,   0,   1,   1
+    8861.731,   773,Finish(2), after,   2,   0,   0,   1,   0
+    8877.863,   775,Finish(1),before,   1,   0,   0,   1,   0
+    8877.863,   775,Finish(1), after,   2,   0,   0,   0,   1
+    8898.066,   778,Finish(2),before,   1,   0,   0,   0,   1
+    8898.066,   778,Finish(2), after,   1,   0,   0,   0,   0
+    9044.719,   774,  Arrival,before,   0,   0,   0,   0,   0
+    9044.719,   774,  Arrival, after,   2,   0,   0,   1,   0
+    9069.719,   781,Finish(1),before,   1,   0,   0,   1,   0
+    9069.719,   781,Finish(1), after,   2,   0,   0,   0,   1
+    9161.144,   783,Finish(2),before,   1,   0,   0,   0,   1
+    9161.144,   783,Finish(2), after,   1,   0,   0,   0,   0
+    9174.960,   780,  Arrival,before,   0,   0,   0,   0,   0
+    9174.960,   780,  Arrival, after,   2,   0,   0,   1,   0
+    9199.960,   786,Finish(1),before,   1,   0,   0,   1,   0
+    9199.960,   786,Finish(1), after,   2,   0,   0,   0,   1
+    9232.537,   785,  Arrival,before,   1,   0,   0,   0,   1
+    9232.537,   785,  Arrival, after,   3,   0,   0,   1,   1
+    9257.012,   789,  Arrival,before,   2,   0,   0,   1,   1
+    9257.012,   789,  Arrival, after,   3,   1,   0,   1,   1
+    9257.537,   790,Finish(1),before,   2,   1,   0,   1,   1
+    9257.537,   790,Finish(1), after,   3,   0,   1,   1,   1
+    9274.987,   788,Finish(2),before,   2,   0,   1,   1,   1
+    9274.987,   788,Finish(2), after,   3,   0,   0,   1,   1
+    9275.374,   795,Finish(2),before,   2,   0,   0,   1,   1
+    9275.374,   795,Finish(2), after,   2,   0,   0,   1,   0
+    9282.537,   793,Finish(1),before,   1,   0,   0,   1,   0
+    9282.537,   793,Finish(1), after,   2,   0,   0,   0,   1
+    9332.078,   791,  Arrival,before,   1,   0,   0,   0,   1
+    9332.078,   791,  Arrival, after,   3,   0,   0,   1,   1
+    9337.227,   799,  Arrival,before,   2,   0,   0,   1,   1
+    9337.227,   799,  Arrival, after,   3,   1,   0,   1,   1
+    9343.831,   798,Finish(2),before,   2,   1,   0,   1,   1
+    9343.831,   798,Finish(2), after,   2,   1,   0,   1,   0
+    9345.923,   801,  Arrival,before,   1,   1,   0,   1,   0
+    9345.923,   801,  Arrival, after,   2,   2,   0,   1,   0
+    9357.078,   800,Finish(1),before,   1,   2,   0,   1,   0
+    9357.078,   800,Finish(1), after,   3,   1,   0,   1,   1
+    9372.838,   806,Finish(2),before,   2,   1,   0,   1,   1
+    9372.838,   806,Finish(2), after,   2,   1,   0,   1,   0
+    9382.078,   805,Finish(1),before,   1,   1,   0,   1,   0
+    9382.078,   805,Finish(1), after,   3,   0,   0,   1,   1
+    9407.078,   809,Finish(1),before,   2,   0,   0,   1,   1
+    9407.078,   809,Finish(1), after,   2,   0,   1,   0,   1
+    9425.371,   803,  Arrival,before,   1,   0,   1,   0,   1
+    9425.371,   803,  Arrival, after,   3,   0,   1,   1,   1
+    9450.371,   813,Finish(1),before,   2,   0,   1,   1,   1
+    9450.371,   813,Finish(1), after,   2,   0,   2,   0,   1
+    9451.922,   810,Finish(2),before,   1,   0,   2,   0,   1
+    9451.922,   810,Finish(2), after,   2,   0,   1,   0,   1
+    9484.426,   812,  Arrival,before,   1,   0,   1,   0,   1
+    9484.426,   812,  Arrival, after,   3,   0,   1,   1,   1
+    9509.426,   818,Finish(1),before,   2,   0,   1,   1,   1
+    9509.426,   818,Finish(1), after,   2,   0,   2,   0,   1
+    9546.944,   817,  Arrival,before,   1,   0,   2,   0,   1
+    9546.944,   817,  Arrival, after,   3,   0,   2,   1,   1
+    9571.944,   821,Finish(1),before,   2,   0,   2,   1,   1
+    9571.944,   821,Finish(1), after,   2,   0,   3,   0,   1
+    9596.902,   820,  Arrival,before,   1,   0,   3,   0,   1
+    9596.902,   820,  Arrival, after,   3,   0,   3,   1,   1
+    9608.119,   823,  Arrival,before,   2,   0,   3,   1,   1
+    9608.119,   823,  Arrival, after,   3,   1,   3,   1,   1
+    9621.902,   824,Finish(1),before,   2,   1,   3,   1,   1
+    9621.902,   824,Finish(1), after,   3,   0,   4,   1,   1
+    9646.902,   827,Finish(1),before,   2,   0,   4,   1,   1
+    9646.902,   827,Finish(1), after,   3,   0,   4,   1,   1
+    9660.159,   816,Finish(2),before,   2,   0,   4,   1,   1
+    9660.159,   816,Finish(2), after,   3,   0,   3,   1,   1
+    9660.159,   827,Finish(1),before,   2,   0,   3,   1,   1
+    9660.159,   827,Finish(1), after,   2,   0,   4,   0,   1
+    9661.200,   825,  Arrival,before,   1,   0,   4,   0,   1
+    9661.200,   825,  Arrival, after,   3,   0,   4,   1,   1
+    9683.103,   830,Finish(2),before,   2,   0,   4,   1,   1
+    9683.103,   830,Finish(2), after,   3,   0,   3,   1,   1
+    9686.200,   833,Finish(1),before,   2,   0,   3,   1,   1
+    9686.200,   833,Finish(1), after,   2,   0,   4,   0,   1
+    9714.014,   832,  Arrival,before,   1,   0,   4,   0,   1
+    9714.014,   832,  Arrival, after,   3,   0,   4,   1,   1
+    9739.014,   838,Finish(1),before,   2,   0,   4,   1,   1
+    9739.014,   838,Finish(1), after,   3,   0,   4,   1,   1
+    9770.494,   837,  Arrival,before,   2,   0,   4,   1,   1
+    9770.494,   837,  Arrival, after,   3,   1,   4,   1,   1
+    9770.494,   838,Finish(1),before,   2,   1,   4,   1,   1
+    9770.494,   838,Finish(1), after,   3,   1,   4,   1,   1
+    9798.721,   835,Finish(2),before,   2,   1,   4,   1,   1
+    9798.721,   835,Finish(2), after,   3,   1,   3,   1,   1
+    9798.721,   838,Finish(1),before,   2,   1,   3,   1,   1
+    9798.721,   838,Finish(1), after,   3,   0,   4,   1,   1
+    9823.011,   843,Finish(2),before,   2,   0,   4,   1,   1
+    9823.011,   843,Finish(2), after,   3,   0,   3,   1,   1
+    9823.721,   845,Finish(1),before,   2,   0,   3,   1,   1
+    9823.721,   845,Finish(1), after,   2,   0,   4,   0,   1
+    9839.708,   840,  Arrival,before,   1,   0,   4,   0,   1
+    9839.708,   840,  Arrival, after,   3,   0,   4,   1,   1
+    9864.708,   850,Finish(1),before,   2,   0,   4,   1,   1
+    9864.708,   850,Finish(1), after,   3,   0,   4,   1,   1
+    9864.840,   847,Finish(2),before,   2,   0,   4,   1,   1
+    9864.840,   847,Finish(2), after,   3,   0,   3,   1,   1
+    9864.840,   850,Finish(1),before,   2,   0,   3,   1,   1
+    9864.840,   850,Finish(1), after,   2,   0,   4,   0,   1
+    9918.599,   849,  Arrival,before,   1,   0,   4,   0,   1
+    9918.599,   849,  Arrival, after,   3,   0,   4,   1,   1
+    9943.599,   856,Finish(1),before,   2,   0,   4,   1,   1
+    9943.599,   856,Finish(1), after,   3,   0,   4,   1,   1
+    9994.428,   853,Finish(2),before,   2,   0,   4,   1,   1
+    9994.428,   853,Finish(2), after,   3,   0,   3,   1,   1
+    9994.428,   856,Finish(1),before,   2,   0,   3,   1,   1
+    9994.428,   856,Finish(1), after,   2,   0,   4,   0,   1
+   10040.948,   855,  Arrival,before,   1,   0,   4,   0,   1
+   10040.948,   855,  Arrival, after,   3,   0,   4,   1,   1
